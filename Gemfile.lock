@@ -41,6 +41,8 @@ GEM
     addressable (2.5.1)
       public_suffix (~> 2.0, >= 2.0.2)
     arel (8.0.0)
+    bcrypt (3.1.11)
+    bcrypt (3.1.11-x64-mingw32)
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.0.6)
@@ -61,12 +63,19 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    devise (4.3.0)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 4.1.0, < 5.2)
+      responders
+      warden (~> 1.2.3)
     erubi (1.6.0)
     execjs (2.7.0)
     ffi (1.9.18)
+    ffi (1.9.18-x64-mingw32)
     globalid (0.4.0)
       activesupport (>= 4.2.0)
-    i18n (0.8.3)
+    i18n (0.8.4)
     jbuilder (2.6.4)
       activesupport (>= 3.0.0)
       multi_json (>= 1.2)
@@ -76,19 +85,23 @@ GEM
       ruby_dep (~> 1.2)
     loofah (2.0.3)
       nokogiri (>= 1.5.9)
-    mail (2.6.5)
+    mail (2.6.6)
       mime-types (>= 1.16, < 4)
     method_source (0.8.2)
     mime-types (3.1)
       mime-types-data (~> 3.2015)
     mime-types-data (3.2016.0521)
-    mini_portile2 (2.1.0)
+    mini_portile2 (2.2.0)
     minitest (5.10.2)
     multi_json (1.12.1)
     nio4r (2.1.0)
-    nokogiri (1.7.2)
-      mini_portile2 (~> 2.1.0)
+    nokogiri (1.8.0)
+      mini_portile2 (~> 2.2.0)
+    nokogiri (1.8.0-x64-mingw32)
+      mini_portile2 (~> 2.2.0)
+    orm_adapter (0.5.0)
     pg (0.20.0)
+    pg (0.20.0-x64-mingw32)
     public_suffix (2.0.5)
     puma (3.8.2)
     rack (2.0.3)
@@ -103,7 +116,7 @@ GEM
       activemodel (= 5.1.1)
       activerecord (= 5.1.1)
       activesupport (= 5.1.1)
-      bundler (>= 1.15.0, < 2.0)
+      bundler (>= 1.3.0, < 2.0)
       railties (= 5.1.1)
       sprockets-rails (>= 2.0.0)
     rails-dom-testing (2.0.3)
@@ -121,6 +134,9 @@ GEM
     rb-fsevent (0.9.8)
     rb-inotify (0.9.8)
       ffi (>= 0.5.0)
+    responders (2.4.0)
+      actionpack (>= 4.2.0, < 5.3)
+      railties (>= 4.2.0, < 5.3)
     ruby_dep (1.5.0)
     rubyzip (1.2.1)
     sass (3.4.24)
@@ -154,8 +170,12 @@ GEM
     turbolinks-source (5.0.3)
     tzinfo (1.2.3)
       thread_safe (~> 0.1)
+    tzinfo-data (1.2017.2)
+      tzinfo (>= 1.0.0)
     uglifier (3.2.0)
       execjs (>= 0.3.0, < 3)
+    warden (1.2.7)
+      rack (>= 1.0)
     web-console (3.5.1)
       actionview (>= 5.0)
       activemodel (>= 5.0)
@@ -170,11 +190,14 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
+  bcrypt
   byebug
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
+  devise
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg
@@ -185,6 +208,7 @@ DEPENDENCIES
   spring
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
+  tzinfo-data
   uglifier (>= 1.3.0)
   web-console (>= 3.3.0)
 
