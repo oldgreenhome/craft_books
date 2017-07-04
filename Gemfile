@@ -50,4 +50,4 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-gem 'wdm', '>= 0.1.0' if Gem.win_platform?
+gem 'devise'
