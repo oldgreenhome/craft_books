@@ -1,6 +1,6 @@
 class UserController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  before_action :autehnticate_user!
+  before_action :authenticate_user!
   load_and_authorize_resource
   # GET /user
   # GET /user.json

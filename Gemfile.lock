@@ -1,3 +1,50 @@
+GIT
+  remote: https://github.com/rspec/rspec-core.git
+  revision: 0e0584f5c0624f244c9800f4a66b1256e496d14a
+  branch: master
+  specs:
+    rspec-core (3.7.0.pre)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-expectations.git
+  revision: 5c4ca95b030788e2f62ee82335ed5836bd83c8e8
+  branch: master
+  specs:
+    rspec-expectations (3.7.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-mocks.git
+  revision: a4b0b7f9852fa7d6950864ecd6f46a8b2ffea9ce
+  branch: master
+  specs:
+    rspec-mocks (3.7.0.pre)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-rails.git
+  revision: ac759a3691242b971ee8388ea77a8051d6fe15b4
+  branch: master
+  specs:
+    rspec-rails (3.7.0.pre)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      railties (>= 3.0)
+      rspec-core (= 3.7.0.pre)
+      rspec-expectations (= 3.7.0.pre)
+      rspec-mocks (= 3.7.0.pre)
+      rspec-support (= 3.7.0.pre)
+
+GIT
+  remote: https://github.com/rspec/rspec-support.git
+  revision: 491e7236856d93103718a8e30e8b9a415fbad28b
+  branch: master
+  specs:
+    rspec-support (3.7.0.pre)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -46,6 +93,7 @@ GEM
     bindex (0.5.0)
     builder (3.2.3)
     byebug (9.0.6)
+    cancancan (2.0.0)
     capybara (2.14.0)
       addressable
       mime-types (>= 1.16)
@@ -69,8 +117,14 @@ GEM
       railties (>= 4.1.0, < 5.2)
       responders
       warden (~> 1.2.3)
+    diff-lcs (1.3)
     erubi (1.6.0)
     execjs (2.7.0)
+    factory_girl (4.8.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.8.0)
+      factory_girl (~> 4.8.0)
+      railties (>= 3.0.0)
     ffi (1.9.18)
     ffi (1.9.18-x64-mingw32)
     globalid (0.4.0)
@@ -195,14 +249,21 @@ PLATFORMS
 DEPENDENCIES
   bcrypt
   byebug
+  cancancan (~> 2.0)
   capybara (~> 2.13)
   coffee-rails (~> 4.2)
   devise
+  factory_girl_rails (~> 4.0)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
   pg
   puma (~> 3.7)
   rails (~> 5.1.1)
+  rspec-core!
+  rspec-expectations!
+  rspec-mocks!
+  rspec-rails!
+  rspec-support!
   sass-rails (~> 5.0)
   selenium-webdriver
   spring
