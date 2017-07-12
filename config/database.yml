@@ -4,8 +4,9 @@ default: &default
   timeout: 5000
 
 development:
-  <<: *default
-  database: db/development.postgresql
+  adapter: postgresql
+  database: craft_books
+  host: localhost
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
